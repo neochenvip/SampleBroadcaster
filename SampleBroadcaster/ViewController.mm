@@ -48,8 +48,8 @@
     _session.delegate = self;
     
     
-    // ...
-    [SIOSocket socketWithHost: @"http://10.199.213.200:3000" response: ^(SIOSocket *socket) {
+    // @纪俊 这里配置socket.io的服务端
+    [SIOSocket socketWithHost: @"http://112.74.80.186:3000" response: ^(SIOSocket *socket) {
         self.socket = socket;
         self.socket.onConnect = ^()
         {
